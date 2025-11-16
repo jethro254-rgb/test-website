@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #34495e;
+            padding: 12px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+
+        /* About section */
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+        }
+        .profile-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #2c3e50;
+        }
+
+        /* Skills & Cards */
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Certificate Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* CV Button */
+        .cv-btn {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            margin-top: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .cv-btn:hover {
+            background: #219150;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <p>Showcasing My Skills, Projects & Professional Certificates</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT ME -->
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="about-container">
+        <img src="images/image.jpg" alt="My Photo" class="profile-img">
+
+        <div>
+            <p>
+                I am a dedicated Computer Science and Mathematics student specializing 
+                in software engineering, IT systems, and modern technologies. I am passionate 
+                about building impactful solutions and constantly improving my technical expertise.
+            </p>
+
+            <a href="jethro cv.pdf" download class="cv-btn">Download My CV</a>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="card">
+        <h3>Programming Languages</h3>
+        <p>HTML, CSS, JavaScript, Python, Java, PHP</p>
+    </div>
+
+    <div class="card">
+        <h3>Technologies & Tools</h3>
+        <p>MySQL, Git, GitHub, Linux, Docker, Firebase, Cloud Basics</p>
+    </div>
+
+    <div class="card">
+        <h3>Professional Skills</h3>
+        <p>Software Engineering, Networking, IT Support, Problem Solving</p>
+    </div>
+</section>
+
+<!-- CERTIFICATES GALLERY -->
+<section id="certificates">
+    <h2>Certificates Gallery</h2>
+
+    <div class="gallery">
+        <img src="images/advanced.jpg" alt="advanced programming">
+        <img src="images/certificate.jpg" alt="Certificate">
+        <img src="images/cybersecurity.jpg" alt="Introduction to cybersecurity">
+        <img src="images/clms.jpg" alt="cms certificate">
+        <img src="images/linux.jpg" alt="linux">
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Information</h2>
+    <p><strong>Email:</strong>jethromaeke3568@gmail.comcom</p>
+    <p><strong>Phone:</strong> +254769569972</p>
+    <p><strong>GitHub:</strong> <a href="#" target="_blank">github.com/jethro254</a></p>
+    <p><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/maekejethro</a></p>
+</section
+
+<footer>
+    &copy; 2025 My Portfolio. All Rights Reserved.
+</footer>
+
+</body>
+</html>
